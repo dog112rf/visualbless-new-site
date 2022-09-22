@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+/* 
+    Playfair Display:
+    font-family: 'Playfair Display', serif;
+
+    Poiret One:
+    font-family: 'Poiret One', cursive;
+
+    Noto Sans:
+    font-family: 'Noto Sans', sans-serif;
+
+    Nunito Sans:
+    font-family: 'Nunito Sans', sans-serif;
+
+    Mulish:
+    font-family: 'Mulish', sans-serif;
+
+    Montserrat:
+    font-family: 'Montserrat', sans-serif;
+
+    Raleway:
+    font-family: 'Raleway', sans-serif;
+
+    Alumni Sans Pinstripe:
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+
+    Cormorant Garamond:
+    font-family: 'Cormorant Garamond', serif;
+
+    Noto Serif Display:
+    font-family: 'Noto Serif Display', serif;
+
+    Dela Gothic One:
+    font-family: 'Dela Gothic One', cursive;
+
+    Prosto One:
+    font-family: 'Prosto One', cursive;
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(240, 240, 240);
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+}
+
+.menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 2px;
+}
+
+
+.sub_menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 2px;
+}
+
+.sub_menu .menu_button {
+    font-size: 20px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.menu_button {
+    margin: 5px;
+    color: black;
+    font-size: 25px;
+}
+
+.menu_button {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+    margin-bottom: 2px;    margin-top: 2px;
+
+}
+
+.menu_button:hover {
+    background-size: 100% 1px;
+}
+
+#portfolio .menu_button{
+    font-size: 0px;
+    transition: .5s;
+}
+
+.display_block .menu_button{
+    display: block ;
+}
+
+.showup .menu_button{ 
+    font-size: 20px!important;
+    margin-bottom: 10px;
+}
+
+#main_slider {
+    overflow: hidden;
+}
+
+.main_slide_1 {
+    background-image: url(https://sun7-13.userapi.com/impg/6eD7jt1sMBRk1iv2OzZ7g91E0z7E6PxMwB1SsA/M-sgl7pUGOA.jpg?size=2560x2560&quality=95&sign=215b4c1f9fa0171e274c9d5cc715f22d&type=album);
+    background-position-y: center;
+    width: 100%;
+    height: 250px!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: flex-start!important;
+    flex-direction: column!important;
+    align-content: flex-start!important;
+}
+
+.main_slide_2 {
+    background-image: url(https://psv4.userapi.com/c237231/u243323151/docs/d56/45f419d4fd30/Pont.jpg?extra=vsis1CcWzuxhVqax-Y2TBJlVp1P5sQejtxyy9Z_lWe0czEdgex22fq22Z8RnFyL5FqIGXkjd8d45KiOrHXKH14I7tsN_le7QDIxKyfbtizRWJA3pt5d9atUnY34ncUWLXMXMLtNoOaWhLm6Lu8PTvlze5aE);
+    background-position-y: center;
+    width: 100%;
+    height: 250px!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: flex-start!important;
+    flex-direction: column!important;
+    align-content: flex-start!important;
+}
+.main_slide_1 a, .main_slide_2 a{
+    color: white;
+    z-index: 1;
+    margin-left: 50px;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main_slide_1 p, .main_slide_2 p {
+    color: white;
+    z-index: 1;
+    margin-left: 50px;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bluebar {
+    background: rgb(33, 92, 255);
+    width: 100%;
+    color: white;
+}
+
+.bluebar p {
+    margin: 0;
+}
+
+.artists_portfolio {
+    text-align: center;
+}
+
+.artists_portfolio h1, .artists_portfolio h2, .artists_portfolio h3, .artists_portfolio h4{
+    font-weight: 400;
+}
+
+.artists_portfolio_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_artist {
+    margin: 5px;
+    position: relative;
+}
+
+.portfolio_artist img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.artist_portfolio_hiddenimg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.artist_portfolio_hiddenimg:hover {
+    opacity: 1;
+}
+
+.fontweight100 { 
+    font-weight: 100;
+    text-align: center;
+}
+
+.latest_news a {
+    text-decoration: none;
+}
+
+.latest_news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.latest_news_block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    height: 500px;
+    box-shadow: inset 0px 0px 1000px rgba(0,0,0,0.9);
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+#pont13092022 {
+    background: url(https://psv4.userapi.com/c237231/u243323151/docs/d55/ad871f2727bb/Pont.png?extra=7ki4-IsZhqjlUI78ySplIAGZy9Uj9B68QNFauh4rb-f65skprFRrvR2arLcwR5R4aApbPouVhIrf9AqQxJqC25APYA7ppO6Eh6KnSl0-hboO_Ga-b-IURuAPmEVkJr_W9Lu0eLI_8h9rJBGGH6OBki9I0IM);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.latest_news_block_text {
+    margin: 20px;
+}
+
+.news_page {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.news_page_picture {
+    width: 40%;
+    margin: 20px;
+}
+
+.news_text {
+    text-align: left;
+}
+
+.news_text_img {
+    width: 30%;
+    margin: 5px;
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.latest_news_block .latest_news_block_text h3,.latest_news_block .latest_news_block_text h4,.latest_news_block .latest_news_block_text h5 {
+    transition: .2s;
+    opacity: 1;
+}
+
+.latest_news_block:hover > .latest_news_block_text > h3, .latest_news_block:hover > .latest_news_block_text > h4, .latest_news_block:hover > .latest_news_block_text > h5 {
+    opacity: 0;
+
+}
+
+.latest_news_block:hover {
+    box-shadow: none;
+    width: 500px;
+}
