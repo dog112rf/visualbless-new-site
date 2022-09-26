@@ -56,6 +56,41 @@ html, body {
     scroll-behavior: smooth;
 }
 
+::placeholder {
+    font-family: 'Playfair Display', serif;
+}
+
+.search {
+    background: none;
+    border: solid 2px rgb(230, 230, 230);;
+    border-radius: 0px;
+    transition: .5s;
+}
+
+.search:focus {
+    background: none;
+    border: solid 2px rgb(210, 210, 210);;
+    border-radius: 0px;
+    outline: none;
+}
+
+.nooutline {
+    outline: none;
+    border: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.market_inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.market_inputs button, .market_inputs input {
+    font-size: 20px;
+}
+
 .menu {
     justify-content: center;
     align-items: center;
@@ -129,7 +164,7 @@ html, body {
 }
 
 .main_slide_2 {
-    background-image: url(https://psv4.userapi.com/c237231/u243323151/docs/d56/45f419d4fd30/Pont.jpg?extra=vsis1CcWzuxhVqax-Y2TBJlVp1P5sQejtxyy9Z_lWe0czEdgex22fq22Z8RnFyL5FqIGXkjd8d45KiOrHXKH14I7tsN_le7QDIxKyfbtizRWJA3pt5d9atUnY34ncUWLXMXMLtNoOaWhLm6Lu8PTvlze5aE);
+    background-image: url(https://sun7-9.userapi.com/impg/NFhTX92qtbpEIVPwztUzmQV8LAv8rrdk4icmmQ/PEwVz-FWX4M.jpg?size=2560x2560&quality=95&sign=d3c3c533b557a0a9cd5a91bc23fecd66&type=album);
     background-position-y: center;
     width: 100%;
     height: 250px!important;
@@ -216,6 +251,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin: 5px;
 }
 
@@ -233,7 +269,7 @@ html, body {
 }
 
 #pont13092022 {
-    background: url(https://psv4.userapi.com/c237231/u243323151/docs/d55/ad871f2727bb/Pont.png?extra=7ki4-IsZhqjlUI78ySplIAGZy9Uj9B68QNFauh4rb-f65skprFRrvR2arLcwR5R4aApbPouVhIrf9AqQxJqC25APYA7ppO6Eh6KnSl0-hboO_Ga-b-IURuAPmEVkJr_W9Lu0eLI_8h9rJBGGH6OBki9I0IM);
+    background: url(https://sun7-9.userapi.com/impg/NFhTX92qtbpEIVPwztUzmQV8LAv8rrdk4icmmQ/PEwVz-FWX4M.jpg?size=2560x2560&quality=95&sign=d3c3c533b557a0a9cd5a91bc23fecd66&type=album);
     background-size: cover;
     background-position-x: center;
 }
@@ -290,3 +326,15 @@ html, body {
     box-shadow: none;
     width: 500px;
 }
+
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+  }
+  
+  ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }
