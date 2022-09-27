@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('http://fonts.cdnfonts.com/css/made-outer-sans-alt');
 
 /* 
     Playfair Display:
@@ -338,3 +339,67 @@ li {
     padding-left: 0;
     /* Отступ слева в браузере Firefox, Safari, Chrome */
   }
+.pagesystem--transitiondot5s {
+    transition: .5s;
+}
+  
+.pagesystem--hidden_display_page {
+    display: none!important
+}
+
+.pagesystem--active_page {
+    opacity: 1;
+}
+
+.pagesystem--active_display_page{
+    display: block;
+}
+
+.pagesystem--hidden_page {
+    opacity: 0;
+    margin-top: 10%;
+}
+
+.cover_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover_gallery a img {
+    width: 300px;
+    height: 300px;
+}
+
+.cover_gallery a {
+    margin: 10px;
+}
+
+.gallery_timeline_date {
+    color: rgb(33, 92, 255);
+    text-align: center;
+    font-family: 'MADE Outer Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.hr-horizontal-gradient {
+    margin: 5px;
+	padding: 0;
+	height: 4px;
+	border: none;
+	background: linear-gradient(45deg, rgb(33, 92, 255), rgb(83, 129, 255));
+    width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fancybox__caption {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fancybox__counter {
+    font-family: 'MADE Outer Sans', sans-serif;
+    font-weight: 500;
+}
