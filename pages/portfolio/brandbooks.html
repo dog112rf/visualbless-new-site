@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualbless | Брендбуки</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+  />
+</head>
+<body>
+    <div class="bluebar">
+        <marquee class="fontweight100"></marquee>
+    </div>
+    <header>
+        <nav class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="javascript:void(0);" id="portfolio_button" class="menu_button">Портфолио</a>
+            <a href="/pages/credits.html" class="menu_button">Кредитсы</a>
+            <a href="/pages/market.html" class="menu_button">Маркет</a>
+            <a href="/pages/reviews.html" class="menu_button">Отзывы</a>
+            <a href="/pages/team.html" class="menu_button">Команда</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </nav>
+        <nav class="sub_menu" id="portfolio">
+            <a href="/pages/portfolio/covers.html" class="menu_button">Обложки</a>
+            <a href="/pages/portfolio/brandbooks.html" class="menu_button">Брендбуки</a>
+            <a href="/pages/portfolio/prints.html" class="menu_button">Принты</a>
+            <a href="/pages/portfolio/arts.html" class="menu_button">Арты</a>
+            <a href="/pages/portfolio/sites.html" class="menu_button">Сайты</a>
+            <a href="/pages/portfolio/decorations.html" class="menu_button">Оформления</a>
+            <a href="/pages/portfolio/motion.html" class="menu_button">Motion-дизайн</a>
+        </nav>
+    </header>       
+    <div class="autoplay" id="main_slider">
+        <div>
+            <div class="main_slide_1">
+                <a class="main_slide_1_title" id="main_slide_1_href"></a>
+                <p class="main_slide_1_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_2">
+                <a class="main_slide_2_title" id="main_slide_2_href"></a>
+                <p class="main_slide_2_desc"></p>
+            </div>
+        </div>
+    </div> 
+    <h1 class="fontweight100">Брендбуки</h1>
+    <h2 class="gallery_timeline_date">2022</h2>
+    <hr class="hr-horizontal-gradient">
+    <div class="brandbook_gallery">
+        <a href="https://sun9-35.userapi.com/impg/rUU-PhwJMdrHS4xiz-D14TB9nBZ6KwDQ-l7Pyg/GGqZUY2ZQc0.jpg?size=842x596&quality=95&sign=1ddd4f5b17660199b2de94194d5188d9&type=album" data-fancybox="gallery" data-caption="Брендбук для visualbless (2022)">
+            <img class="lazyload" src="https://sun9-35.userapi.com/impg/rUU-PhwJMdrHS4xiz-D14TB9nBZ6KwDQ-l7Pyg/GGqZUY2ZQc0.jpg?size=842x596&quality=95&sign=1ddd4f5b17660199b2de94194d5188d9&type=album" alt="">
+        </a>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+<script src="/script.js"></script>
+<script>
+    $('.autoplay').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+</body>
+</html>

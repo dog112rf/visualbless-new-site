@@ -164,6 +164,22 @@ html, body {
     align-content: flex-start!important;
 }
 
+.main_slide_1_title::after{
+    content: 'Новый дроп обложек';
+}
+
+.main_slide_1_desc::after{
+    content: 'Новый дроп обложек уже на сайте, успейте приобрести';
+}
+
+.main_slide_2_title::after{
+    content: 'OG BLESS, OFFMi';
+}
+
+.main_slide_2_desc::after{
+    content: 'Обложка на трек "Понт"';
+}
+
 .main_slide_2 {
     background-image: url(https://sun7-9.userapi.com/impg/NFhTX92qtbpEIVPwztUzmQV8LAv8rrdk4icmmQ/PEwVz-FWX4M.jpg?size=2560x2560&quality=95&sign=d3c3c533b557a0a9cd5a91bc23fecd66&type=album);
     background-position-y: center;
@@ -375,10 +391,39 @@ li {
     margin: 10px;
 }
 
+.brandbook_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandbook_gallery a img {
+    height: 300px;
+}
+
+.brandbook_gallery a {
+    margin: 10px;
+}
+
+.prints_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prints_gallery a img {
+    height: 300px;
+    width: 300px;
+}
+
+.prints_gallery a {
+    margin: 10px;
+}
+
 .gallery_timeline_date {
     color: rgb(33, 92, 255);
     text-align: center;
-    font-family: 'MADE Outer Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 30px;
     margin: 5px;
@@ -400,6 +445,5 @@ li {
 }
 
 .fancybox__counter {
-    font-family: 'MADE Outer Sans', sans-serif;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
