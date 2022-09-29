@@ -11,6 +11,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 @import url('http://fonts.cdnfonts.com/css/made-outer-sans-alt');
+@import url('http://fonts.cdnfonts.com/css/roblox-new');
+@import url('http://fonts.cdnfonts.com/css/gogh');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
     Playfair Display:
@@ -48,17 +52,134 @@
 
     Prosto One:
     font-family: 'Prosto One', cursive;
+
+    Jost:
+    font-family: 'Jost', sans-serif;
 */
-html, body {
+
+@font-face {
+    font-family: 'Bebas Neue Thin';
+    src: url('BebasNeue-Thin.eot');
+    src: url('BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeue-Thin.woff') format('woff'),
+    url('BebasNeue-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('BebasNeueBook.eot');
+    src: url('BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueBook.woff') format('woff'),
+    url('BebasNeueBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Light';
+    src: url('BebasNeueLight.eot');
+    src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueLight.woff') format('woff'),
+    url('BebasNeueLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    src: url('BebasNeueRegular.eot');
+    src: url('BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueRegular.woff') format('woff'),
+    url('BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('BebasNeueBold.eot');
+    src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueBold.woff') format('woff'),
+    url('BebasNeueBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body {
     margin: 0;
     padding: 0;
-    background: rgb(240, 240, 240);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue', sans-serif;
+    background: #000;
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  outline: 2px solid rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: 'Bebas Neue Bold';
+}
+
+button {
+    font-family: 'Bebas Neue Bold';
+}
+
+.search {
+    font-family: 'Bebas Neue Bold';
+}
+
+a {
+    font-family: 'Bebas Neue Bold';
+}
+
+p {
+    font-family: 'Bebas Neue Bold';
+}
+
+h2 {
+    font-family: 'Bebas Neue Bold';
+}
+
+h3 {
+    font-family: 'Bebas Neue Bold';
+}
+
+h4 {
+    font-family: 'Bebas Neue Book';
+}
+
+h5 {
+    font-family: 'Bebas Neue Light';
+}
+
+h6 {
+    font-family: 'Bebas Neue Thin';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.bluebar img {
+    text-align: center;
+    width: 10%;
+    filter: invert(100);
+}
+
 ::placeholder {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue Bold';
 }
 
 .search {
@@ -78,7 +199,7 @@ html, body {
 .nooutline {
     outline: none;
     border: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue Bold';
 }
 
 .market_inputs {
@@ -97,6 +218,7 @@ html, body {
     align-items: center;
     display: flex;
     padding: 2px;
+    
 }
 
 
@@ -108,21 +230,21 @@ html, body {
 }
 
 .sub_menu .menu_button {
-    font-size: 20px;
+    font-size: 35px;
     margin-bottom: 0px;
     display: none;
 }
 
 .menu_button {
-    margin: 5px;
-    color: black;
-    font-size: 25px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
 }
 
 .menu_button {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
+    background-position: 0% 90%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
     transition: background-size .3s;
@@ -144,7 +266,7 @@ html, body {
 }
 
 .showup .menu_button{ 
-    font-size: 20px!important;
+    font-size: 30px!important;
     margin-bottom: 10px;
 }
 
@@ -194,8 +316,9 @@ html, body {
 .main_slide_1 a, .main_slide_2 a{
     color: white;
     z-index: 1;
+    text-decoration: none;
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 35px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -203,13 +326,13 @@ html, body {
     color: white;
     z-index: 1;
     margin-left: 50px;
-    font-size: 15px;
+    font-size: 25px;
     background: rgba(0, 0, 0, 0.5);
 }
 
 .bluebar {
-    background: rgb(33, 92, 255);
     width: 100%;
+    text-align: center;
     color: white;
 }
 
