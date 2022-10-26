@@ -113,6 +113,7 @@ html,body {
     font-family: 'Bebas Neue', sans-serif;
     background: #000;
     scroll-behavior: smooth;
+    font-size: 25px;
 }
 
 body::-webkit-scrollbar {
@@ -191,7 +192,7 @@ html, body {
 
 .search:focus {
     background: none;
-    border: solid 2px rgb(210, 210, 210);;
+    border: dashed 2px rgb(255, 255, 255);;
     border-radius: 0px;
     outline: none;
 }
@@ -236,7 +237,7 @@ html, body {
 }
 
 .menu_button {
-    margin: 20px;
+    margin: 17px;
     color: rgb(255, 255, 255);
     font-size: 35px;
 }
@@ -302,6 +303,15 @@ html, body {
     content: 'Обложка на трек "Понт"';
 }
 
+
+.main_slide_3_title::after{
+    content: 'molodyxxa, OG Chris';
+}
+
+.main_slide_3_desc::after{
+    content: 'Обложка на трек "BALABO$$"';
+}
+
 .main_slide_2 {
     background-image: url(https://sun7-9.userapi.com/impg/NFhTX92qtbpEIVPwztUzmQV8LAv8rrdk4icmmQ/PEwVz-FWX4M.jpg?size=2560x2560&quality=95&sign=d3c3c533b557a0a9cd5a91bc23fecd66&type=album);
     background-position-y: center;
@@ -313,16 +323,28 @@ html, body {
     flex-direction: column!important;
     align-content: flex-start!important;
 }
-.main_slide_1 a, .main_slide_2 a{
+
+.main_slide_3 {
+    background-image: url(https://sun7-6.userapi.com/impg/Ab4Llq7uM8bu6jZ_eFzPcbvg533852zn16rkoA/YoNc9zXEBpM.jpg?size=2560x2560&quality=95&sign=2a6010a669a3e2236d6ffe13ad454bca&type=album);
+    background-position-y: center;
+    width: 100%;
+    height: 250px!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: flex-start!important;
+    flex-direction: column!important;
+    align-content: flex-start!important;
+}
+
+.autoplay div div a {
     color: white;
     z-index: 1;
-    text-decoration: none;
     margin-left: 50px;
     font-size: 35px;
     background: rgba(0, 0, 0, 0.5);
 }
 
-.main_slide_1 p, .main_slide_2 p {
+.autoplay div div p {
     color: white;
     z-index: 1;
     margin-left: 50px;
@@ -352,6 +374,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.portfolio_artist_text h3,.portfolio_artist_text h4 {
+    margin: 10px;
 }
 
 .portfolio_artist {
@@ -408,8 +435,20 @@ html, body {
     transition: .2s;
 }
 
-#pont13092022 {
-    background: url(https://sun7-9.userapi.com/impg/NFhTX92qtbpEIVPwztUzmQV8LAv8rrdk4icmmQ/PEwVz-FWX4M.jpg?size=2560x2560&quality=95&sign=d3c3c533b557a0a9cd5a91bc23fecd66&type=album);
+#news_block_3 {
+    background: url(https://sun7-14.userapi.com/impg/d5FuY2Imgt6o0NH-HFPEYDZZV07OCXVDTrvEmQ/lyHtuBa2XJg.jpg?size=2560x2560&quality=95&sign=9bf2e659293d70939c034f010bfed2f0&type=album);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#news_block_2 {
+    background: url(https://sun9-79.userapi.com/impg/wNYrHXVWd6egizCjzXLe7sr5Bq_36ztRo7ux8g/TGDttuU5O9E.jpg?size=2560x2560&quality=95&sign=e426a11dd3b4f1e9902137425eb29659&type=album);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#news_block_1 {
+    background: url(https://sun9-14.userapi.com/impg/XNmnQYzubDyIjgrZp03r1Ls1yyyatTWqHpbeBQ/KZm-pyoeUlE.jpg?size=2560x2560&quality=95&sign=3718a29e6a8597b7664a8860712b7a4f&type=album);
     background-size: cover;
     background-position-x: center;
 }
@@ -546,7 +585,6 @@ li {
 .gallery_timeline_date {
     color: rgb(33, 92, 255);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 30px;
     margin: 5px;
@@ -563,10 +601,77 @@ li {
     margin-right: auto;
 }
 
-.fancybox__caption {
-    font-family: 'Montserrat', sans-serif;
+.sort {
+    background: #000;
+    color: white;
 }
 
-.fancybox__counter {
-    font-family: 'Montserrat', sans-serif;
+.sites_gallery_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
+
+.sites_gallery_block_text {
+    margin: 50px;
+    width: 40%;
+}
+
+.sites_gallery_block_text_link {
+    color: white;
+}
+
+.sites_gallery_block a{
+    width: 50%;
+}
+
+.sites_gallery_block a img{
+    width: 100%;
+}
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #000000;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+
+  .preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .preloader img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }

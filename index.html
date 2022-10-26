@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
+    <div class="preloader">
+<img src="/ezgif-5-38d890d27e.gif" alt="">
+      </div>
     <div class="bluebar">
         <img src="/Visual_Bless.svg" alt="">
     </div>
@@ -21,14 +24,12 @@
             <a href="/pages/credits.html" class="menu_button">Кредитсы</a>
             <a href="/pages/market.html" class="menu_button">Маркет</a>
             <a href="/pages/reviews.html" class="menu_button">Отзывы</a>
-            <a href="/pages/team.html" class="menu_button">Команда</a>
             <a href="/pages/contacts.html" class="menu_button">Контакты</a>
         </nav>
         <nav class="sub_menu" id="portfolio">
             <a href="/pages/portfolio/covers.html" class="menu_button">Обложки</a>
             <a href="/pages/portfolio/brandbooks.html" class="menu_button">Брендбуки</a>
             <a href="/pages/portfolio/prints.html" class="menu_button">Принты</a>
-            <a href="/pages/portfolio/arts.html" class="menu_button">Арты</a>
             <a href="/pages/portfolio/sites.html" class="menu_button">Сайты</a>
             <a href="/pages/portfolio/decorations.html" class="menu_button">Оформления</a>
             <a href="/pages/portfolio/motion.html" class="menu_button">Motion-дизайн</a>
@@ -45,6 +46,12 @@
             <div class="main_slide_2">
                 <a class="main_slide_2_title" id="main_slide_2_href"></a>
                 <p class="main_slide_2_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_3">
+                <a class="main_slide_3_title" id="main_slide_3_href"></a>
+                <p class="main_slide_3_desc"></p>
             </div>
         </div>
     </div> 
@@ -79,34 +86,33 @@
         <h3 class="fontweight100">...и сотни других артистов</h3>
     </div>
     <h1 class="fontweight100">Последние новости</h1>
-    <div class="latest_news">
-        <div class="latest_news_block" id="pont13092022">
+    <div class="latest_news" id="latestnews">
+        <div class="latest_news_block" id="news_block_1">
             <div class="latest_news_block_text" >
-                <h3 class="fontweight100" style="margin:3px;">Обложка на трек "Понт"</h3>
-                <h4 class="fontweight100" style="margin:3px;">OG BLESS, OFFMi - Понт</h4>
-                <h5 class="fontweight100" style="margin:3px;">23.09.2006</h5>
+                <h3 class="fontweight100" style="margin:3px;">Обложка на трек "Не такой"</h3>
+                <h4 class="fontweight100" style="margin:3px;">22carats - Не такой (2022)</h4>
+                <h5 class="fontweight100" style="margin:3px;">11.10.2022</h5>
             </div>
         </div>
-        <div class="latest_news_block" id="pont13092022">
+        <div class="latest_news_block" id="news_block_2">
             <div class="latest_news_block_text" >
-                <h3 class="fontweight100" style="margin:3px;">Обложка на трек "Понт"</h3>
-                <h4 class="fontweight100" style="margin:3px;">OG BLESS, OFFMi - Понт</h4>
-                <h5 class="fontweight100" style="margin:3px;">23.09.2006</h5>
+                <h3 class="fontweight100" style="margin:3px;">Обложка на трек "Thrivin"</h3>
+                <h4 class="fontweight100" style="margin:3px;">FAAUN DR - Thrivin (2022)</h4>
+                <h5 class="fontweight100" style="margin:3px;">09.10.2022</h5>
             </div>
         </div>
-        <div class="latest_news_block" id="pont13092022">
+        <div class="latest_news_block" id="news_block_3">
             <div class="latest_news_block_text" >
-                <h3 class="fontweight100" style="margin:3px;">Обложка на трек "Понт"</h3>
-                <h4 class="fontweight100" style="margin:3px;">OG BLESS, OFFMi - Понт</h4>
-                <h5 class="fontweight100" style="margin:3px;">23.09.2006</h5>
+                <h3 class="fontweight100" style="margin:3px;">Обложка на трек "Малина"</h3>
+                <h4 class="fontweight100" style="margin:3px;">ANKVIL, DEPO, BabyIce - Малина (2022)</h4>
+                <h5 class="fontweight100" style="margin:3px;">09.10.2022</h5>
             </div>
         </div>
-    </div>  
+    </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="/pagesystem.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 <script src="/script.js"></script>
 <script>var options = {
     valueNames: [ 'name', 'date', 'country', 'popularity' ]
@@ -123,7 +129,15 @@
 <script>
 lazyload();
 </script>
-
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 </body>

@@ -63,6 +63,8 @@ function wireUpTriggers() {
 
 var main_slide_1 = document.getElementById("main_slide_1_href")
 var main_slide_2 = document.getElementById("main_slide_2_href")
+var main_slide_3 = document.getElementById("main_slide_3_href")
 
-main_slide_1.href="/index.html#pont13092022"; 
-main_slide_2.href="/index.html#pont13092022"; 
+main_slide_1.href="/index.html#latestnews"; 
+main_slide_2.href="/index.html#latestnews"; 
+main_slide_3.href="/index.html#latestnews"; 
