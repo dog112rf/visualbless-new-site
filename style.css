@@ -207,7 +207,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 25px;
 }
 
 .market_inputs button, .market_inputs input {
@@ -406,9 +406,16 @@ html, body {
 }
 
 .fontweight100 { 
-    font-weight: 100;
     text-align: center;
 }
+
+.credits_page_count_text_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
 
 .latest_news a {
     text-decoration: none;
@@ -545,11 +552,31 @@ li {
 }
 
 .cover_gallery a img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .cover_gallery a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.decorations_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decorations_gallery a img {
+    width: 95%;
+}
+
+.decorations_gallery a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     margin: 10px;
 }
 
@@ -664,6 +691,7 @@ li {
     justify-content: center;
     align-items: center;
     width: 20%;
+    filter: invert(100);
   }
 
   

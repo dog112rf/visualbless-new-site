@@ -14,6 +14,9 @@
   />
 </head>
 <body>
+    <div class="preloader">
+        <img src="/ezgif-5-38d890d27e.gif" alt="">
+              </div>
     <div class="bluebar">
         <img src="/Visual_Bless.svg" alt="">
     </div>
@@ -23,6 +26,7 @@
             <a href="javascript:void(0);" id="portfolio_button" class="menu_button">Портфолио</a>
             <a href="/pages/credits.html" class="menu_button">Кредитсы</a>
             <a href="/pages/market.html" class="menu_button">Маркет</a>
+            <a href="/pages/pricelist.html" class="menu_button">Прайс-лист</a>
             <a href="/pages/reviews.html" class="menu_button">Отзывы</a>
             <a href="/pages/contacts.html" class="menu_button">Контакты</a>
         </nav>
@@ -80,5 +84,14 @@
   autoplaySpeed: 2000,
 });
 </script>
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 </body>
 </html>
