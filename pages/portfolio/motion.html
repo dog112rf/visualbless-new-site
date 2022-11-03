@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualbless | Брендбуки</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+  />
+</head>
+<body>
+    <div class="preloader">
+        <img src="/ezgif-5-38d890d27e.gif" alt="">
+              </div>
+    <div class="bluebar">
+        <img src="/Visual_Bless.svg" alt="">
+    </div>
+    <header>
+        <nav class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="javascript:void(0);" id="portfolio_button" class="menu_button">Портфолио</a>
+            <a href="/pages/credits.html" class="menu_button">Кредитсы</a>
+            <a href="/pages/market.html" class="menu_button">Маркет</a>
+            <a href="/pages/pricelist.html" class="menu_button">Прайс-лист</a>
+            <a href="/pages/reviews.html" class="menu_button">Отзывы</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </nav>
+        <nav class="sub_menu" id="portfolio">
+            <a href="/pages/portfolio/covers.html" class="menu_button">Обложки</a>
+            <a href="/pages/portfolio/brandbooks.html" class="menu_button">Брендбуки</a>
+            <a href="/pages/portfolio/prints.html" class="menu_button">Принты</a>
+            <a href="/pages/portfolio/sites.html" class="menu_button">Сайты</a>
+            <a href="/pages/portfolio/decorations.html" class="menu_button">Оформления</a>
+            <a href="/pages/portfolio/motion.html" class="menu_button">Motion-дизайн</a>
+        </nav>
+    </header>       
+    <div class="autoplay" id="main_slider">
+        <div>
+            <div class="main_slide_1">
+                <a class="main_slide_1_title" id="main_slide_1_href"></a>
+                <p class="main_slide_1_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_2">
+                <a class="main_slide_2_title" id="main_slide_2_href"></a>
+                <p class="main_slide_2_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_3">
+                <a class="main_slide_3_title" id="main_slide_3_href"></a>
+                <p class="main_slide_3_desc"></p>
+            </div>
+        </div>
+    </div> 
+    <h1 class="fontweight100">Motion-дизайн</h1>
+    <h2 class="gallery_timeline_date">2022</h2>
+    <hr class="hr-horizontal-gradient">
+    <div class="decorations_gallery">
+        <a href="https://youtu.be/LsWgPEj95zI" data-fancybox="gallery" data-caption='Сторис для трека "Doping" (2022)'>
+            <img class="lazyload" src="https://psv4.userapi.com/c237231/u243323151/docs/d34/c243c963ea26/doping.jpg?extra=WPvXeLTbevsR55BxtjbWcbatQYvag9c_0vEJlOdW48MuYDoV2NDg49SyDpYx91FwBlqzTHvlL6SnP_3Ym9X9sjstH9hRE90QYGJaTE62deigttExGLxeSny0SzeynYi3qRHMKwsDHcUHFKau45DC81lBpw" alt="">
+        </a>
+        <a data-fancybox="gallery" href="https://youtu.be/4h4b2u3jXjE" data-caption='Сторис для трека "Плод" (2022)'>
+            <img class="lazyload" src="https://psv4.userapi.com/c235031/u243323151/docs/d39/a407a855b477/mango.jpg?extra=a7K3UKjtyi5OdWFBcdpS7f-VrjUewRjki19JJHXBLEZTkQSVajThD2ThtN4gTwsFBk_3wjI6M4gUjYeYqYQf5kC6G77D6wemN8uu575_f9tSw41ZMSa_T6VawD5--w-AcHfjYOLBOGcZT2IJieIsUE2dmg"/>
+          </a>
+        <a href="https://youtu.be/84n-TMIc1nQ" data-fancybox="gallery" data-caption='Сторис для трека "DIGITAL TEARZ" (2022)'>
+            <img class="lazyload" src="https://psv4.userapi.com/c237231/u243323151/docs/d45/6efcc589c003/DIGITAL_TEARZ.jpg?extra=kRWRxRu4K1-foOByrA7vscUNxEyo-diWGoDz_seRgdoQpz2J05sC-wQ51YgHUc8i0Q0ctYGD6Zz0nJZhPqwL64dpRUMPQs7oX6K8BgoNZ6uC7mn7zMLWS9lD6VZkB19M0OhrNicZgqcnpEoEMUzb5U0iqg" alt="">
+        </a>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+<script src="/script.js"></script>
+<script>
+    $('.autoplay').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+</body>
+</html>

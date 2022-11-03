@@ -58,7 +58,7 @@
     <div class="credits_page">
         <h1 class="fontweight100">Кредитсы</h1>
         <div class="credits_page_count_text_container">
-        <h3>Я поработал более с чем&nbsp;</h3><h3 id="creditscustomerscount">.</h3><h3>&nbsp;артистами</h3>
+        <h3>Я поработал с&nbsp;</h3><h3 id="creditscustomerscount">.</h3><h3>&nbsp;артистами</h3>
     </div>
         <div id="users">
             <div class="market_inputs">
@@ -927,6 +927,12 @@
 
 const obj = document.getElementById("creditscustomerscount");
 animateValue(obj, 0, userListitemslength, 2500);
+</script>
+<script>
+    function addplus() {
+        document.getElementById("creditscustomerscount").innerHTML = String(userListitemslength) + "+"
+    }
+    setTimeout(addplus, 2500)
 </script>
 <script>
     $('.autoplay').slick({

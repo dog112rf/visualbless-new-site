@@ -165,6 +165,14 @@ h6 {
     font-family: 'Bebas Neue Thin';
 }
 
+.fancybox__counter {
+    font-family: 'Bebas Neue Book';
+}
+
+.fancybox__caption {
+    font-family: 'Bebas Neue Book';
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -409,11 +417,96 @@ html, body {
     text-align: center;
 }
 
-.credits_page_count_text_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1px;
+.credits_page_count_text_container > h3 {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#creditscustomerscount {
+    font-size: 100px;
+    animation: rainbow infinite 7s ease-in;
+    color: red;
+    text-shadow:
+    0 0 42px red,
+    0 0 82px red,
+    0 0 92px red,
+    0 0 102px red,
+    0 0 151px red;
+}
+
+/* 14,28571428571429 */
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+
+    14.28571428571429% {
+        color: orange;
+        text-shadow:
+        0 0 42px orange,
+        0 0 82px orange,
+        0 0 92px orange,
+        0 0 102px orange,
+        0 0 151px orange;
+    }
+
+    28.57142857142857% {
+        color: yellow;
+        text-shadow:
+        0 0 42px yellow,
+        0 0 82px yellow,
+        0 0 92px yellow,
+        0 0 102px yellow,
+        0 0 151px yellow;
+        
+    }
+
+    42.85714285714287% {
+        color: lime;
+        text-shadow:
+        0 0 42px lime,
+        0 0 82px lime,
+        0 0 92px lime,
+        0 0 102px lime,
+        0 0 151px lime;
+    }
+
+    57.14285714285716% {
+        color: aqua;
+        text-shadow:
+        0 0 42px aqua,
+        0 0 82px aqua,
+        0 0 92px aqua,
+        0 0 102px aqua,
+        0 0 151px aqua;
+    }
+
+    71.42857142857145% {
+        color: blue;
+        text-shadow:
+        0 0 42px blue,
+        0 0 82px blue,
+        0 0 92px blue,
+        0 0 102px blue,
+        0 0 151px blue;
+    }
+
+    85.71428571428574% {
+        color: purple;
+        text-shadow:
+        0 0 42px purple,
+        0 0 82px purple,
+        0 0 92px purple,
+        0 0 102px purple,
+        0 0 151px purple;
+    }
 }
 
 
