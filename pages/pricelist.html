@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualbless | Дизайн, обложки, моушн</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" media="all" href="/cssanim/css/animate.css">
+</head>
+<body>
+    <div class="preloader">
+<img src="/ezgif-5-38d890d27e.gif" alt="">
+      </div>
+    <div class="bluebar">
+        <img src="/Visual_Bless.svg" alt="">
+    </div>
+    <header>
+        
+        <nav class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="javascript:void(0);" id="portfolio_button" class="menu_button">Портфолио</a>
+            <a href="/pages/credits.html" class="menu_button">Кредитсы</a>
+            <a href="/pages/market.html" class="menu_button">Маркет</a>
+            <a href="/pages/pricelist.html" class="menu_button">Прайс-лист</a>
+            <a href="/pages/reviews.html" class="menu_button">Отзывы</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </nav>
+        <nav class="sub_menu" id="portfolio">
+            <a href="/pages/portfolio/covers.html" class="menu_button">Обложки</a>
+            <a href="/pages/portfolio/brandbooks.html" class="menu_button">Брендбуки</a>
+            <a href="/pages/portfolio/prints.html" class="menu_button">Принты</a>
+            <a href="/pages/portfolio/sites.html" class="menu_button">Сайты</a>
+            <a href="/pages/portfolio/decorations.html" class="menu_button">Оформления</a>
+            <a href="/pages/portfolio/motion.html" class="menu_button">Motion-дизайн</a>
+        </nav>
+    </header>       
+    <div class="autoplay" id="main_slider">
+        <div>
+            <div class="main_slide_1">
+                <a class="main_slide_1_title" id="main_slide_1_href"></a>
+                <p class="main_slide_1_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_2">
+                <a class="main_slide_2_title" id="main_slide_2_href"></a>
+                <p class="main_slide_2_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_3">
+                <a class="main_slide_3_title" id="main_slide_3_href"></a>
+                <p class="main_slide_3_desc"></p>
+            </div>
+        </div>
+    </div> 
+    <h1 class="fontweight100 fadeInRight wow">Прайс-лист</h1>
+    <label for="design_select"><h2 class="fontweight100 fadeInRight wow">Выберите вид услуги</h2></label>
+
+<select name="designselect" class="fadeInRight wow" id="design_select">
+    <option value="">--Выберите вид услуги--</option>
+    <option value="cover">Обложка</option>
+    <option value="decoration">Оформление</option>
+    <option value="brandbook">Брендбук</option>
+    <option value="print">Принт</option>
+    <option value="site">Сайт</option>
+    <option value="motion">Motion-дизайн</option>
+</select>
+<div class="pricelist_cover_input display_none" id="cover_input">
+  <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть на обложке?</h2>
+  <textarea class="fadeInRight wow" type="comment" id="cover_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+  
+  <div>
+      <input type="checkbox" id="fastdelivery" name="scales">
+      <label for="fastdelivery" class="fadeInRight wow">Вне очереди (+ 250 RUB)</label>
+    </div>
+    <div>
+      <input type="checkbox" id="motion" name="horns">
+      <label for="motion" class="fadeInRight wow">Motion-дизайн (Сторис) (+ 350 RUB)</label>
+    </div>
+</div>
+
+<div class="pricelist_decoration_input display_none" id="decoration_input">
+  <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть в оформлении?</h2>
+  <textarea class="fadeInRight wow" type="comment" id="cover_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+  
+  <div>
+      <input type="checkbox" id="fastdelivery_decoration" name="scales2">
+      <label for="fastdelivery_decoration" class="fadeInRight wow">Вне очереди (+ 250 RUB)</label>
+    </div>
+    <div>
+      <input type="checkbox" id="motion_decoration" name="horns2">
+      <label for="motion_decoration" class="fadeInRight wow">Motion-дизайн (Сторис) (+ 350 RUB)</label>
+    </div>
+</div>
+<h2 class="fontweight100 fadeInRight wow">Финальное Т.З.</h2>
+<div class="price_final_text_container fadeInRight wow"><h3 class="price_final_text fadeInRight wow" id="price_final_text"></h3></div>
+<a href="javascript:void(0);" id="price_copy_button" class="js-copy-btn fadeInRight wow">Скопировать в буфер обмена</a>
+<h2 class="fontweight100 fadeInRight wow">Финальная цена</h2>
+<div class="price_container fadeInRight wow"><h2 class="price_container_price fadeInRight wow" id="final_price">0</h2><p class="fontweight100 fadeInRight wow">RUB</p></div>
+<a href="https://vk.me/visualbless" target="_blank" class="make_order fadeInRight wow">Сделать заказ</a>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="/pagesystem.js"></script>
+<script src="/script.js"></script>
+<script>var options = {
+    valueNames: [ 'name', 'date', 'country', 'popularity' ]
+  };
+  
+  var userList = new List('users', options);</script>
+<script>
+    $('.autoplay').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script>
+lazyload();
+</script>
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <script src="/cssanim/js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script>
+    var usluga_selector = document.getElementById("design_select")
+    var cover_input = document.getElementById("cover_input")
+    var decoration_input = document.getElementById("decoration_input")
+    var final_price = document.getElementById("final_price")
+    var fastdelivery = document.getElementById("fastdelivery")
+    var motion = document.getElementById("motion")
+    var fastdelivery_decoration = document.getElementById("fastdelivery_decoration")
+    var motion_decoration = document.getElementById("motion_decoration")
+    var cover_input_content = document.getElementById("cover_input_content")
+    var price_final_text = document.getElementById("price_final_text")
+    var tech_price = 0
+    var price_final_text = document.getElementById("price_final_text")
+    var price_copy_button = document.getElementById("price_copy_button")
+
+    function applyprice(){
+
+        function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = final_price;
+animateValue(obj, 0, tech_price, 1000);
+
+    }
+
+    usluga_selector.addEventListener("change", 
+    function(){
+        console.log(usluga_selector.value)
+        if (usluga_selector.value == "cover") {
+            cover_input.classList.remove("display_none")
+            decoration_input.classList.add("display_none")
+            fastdelivery.checked = false;
+            fastdelivery_decoration.checked = false;
+            motion.checked = false;
+            motion_decoration.checked = false;
+            tech_price = 0
+            tech_price = tech_price + 750
+            applyprice()
+        } if (usluga_selector.value == "decoration") {
+            decoration_input.classList.remove("display_none")
+            cover_input.classList.add("display_none")
+            fastdelivery.checked = false;
+            fastdelivery_decoration.checked = false;
+            motion.checked = false;
+            motion_decoration.checked = false;
+            tech_price = 0
+            tech_price = tech_price + 750
+            applyprice()
+        }
+    })
+
+    fastdelivery.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 250
+            applyprice()
+        } else {
+            tech_price = tech_price - 250
+            applyprice()
+  }
+    })
+    
+    motion.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 350
+            applyprice()
+        } else {
+            tech_price = tech_price - 350
+            applyprice()
+  }
+    })
+
+    fastdelivery_decoration.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 250
+            applyprice()
+        } else {
+            tech_price = tech_price - 250
+            applyprice()
+  }
+    })
+    
+    motion_decoration.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 350
+            applyprice()
+        } else {
+            tech_price = tech_price - 350
+            applyprice()
+  }
+    })
+
+    cover_input_content.addEventListener("change", function(){
+        price_final_text.innerHTML = cover_input_content.value
+    })
+
+    function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  
+  // Avoid scrolling to bottom
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Fallback: Copying text command was ' + msg);
+  } catch (err) {
+    console.error('Fallback: Oops, unable to copy', err);
+  }
+
+  document.body.removeChild(textArea);
+}
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    fallbackCopyTextToClipboard(text);
+    return;
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    console.log('Async: Copying to clipboard was successful!');
+  }, function(err) {
+    console.error('Async: Could not copy text: ', err);
+  });
+}
+
+var copyBobBtn = document.querySelector('.js-copy-btn'),
+  copyJaneBtn = document.querySelector('.js-copy-jane-btn');
+
+copyBobBtn.addEventListener('click', function(event) {
+  copyTextToClipboard(price_final_text.innerHTML);
+});
+</script>
+</body>
+</html>
