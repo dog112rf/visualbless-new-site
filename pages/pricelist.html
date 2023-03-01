@@ -85,7 +85,7 @@
 
 <div class="pricelist_decoration_input display_none" id="decoration_input">
   <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть в оформлении?</h2>
-  <textarea class="fadeInRight wow" type="comment" id="cover_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+  <textarea class="fadeInRight wow" type="comment" id="decoration_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
   
   <div>
       <input type="checkbox" id="fastdelivery_decoration" name="scales2">
@@ -94,6 +94,41 @@
     <div>
       <input type="checkbox" id="motion_decoration" name="horns2">
       <label for="motion_decoration" class="fadeInRight wow">Motion-дизайн (Сторис) (+ 350 RUB)</label>
+    </div>
+</div>
+
+<div class="pricelist_brandbook_input display_none" id="brandbook_input">
+  <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть на брендбуке?</h2>
+  <textarea class="fadeInRight wow" type="comment" id="brandbook_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+  
+  <div>
+      <input type="checkbox" id="fastdelivery_brandbook" name="scales2">
+      <label for="fastdelivery_brandbook" class="fadeInRight wow">Вне очереди (+ 250 RUB)</label>
+    </div>
+</div>
+
+<div class="pricelist_print_input display_none" id="print_input">
+  <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть на принте?</h2>
+  <textarea class="fadeInRight wow" type="comment" id="print_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+  
+  <div>
+      <input type="checkbox" id="fastdelivery_print" name="scales2">
+      <label for="fastdelivery_print" class="fadeInRight wow">Вне очереди (+ 250 RUB)</label>
+    </div>
+</div>
+
+<div class="pricelist_site_input display_none" id="site_input">
+  <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть на сайте?</h2>
+  <textarea class="fadeInRight wow" type="comment" id="site_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+</div>
+
+<div class="pricelist_motion_input display_none" id="motion_input">
+  <h2 class="fontweight100 fadeInRight wow">Что бы вы хотели видеть в Motion-анимации?</h2>
+  <textarea class="fadeInRight wow" type="comment" id="motion_input_content" style="width: 700px; height: 300px;" maxlength="1000"></textarea>
+  
+  <div>
+      <input type="checkbox" id="fastdelivery_motion" name="scales2">
+      <label for="fastdelivery_motion" class="fadeInRight wow">Вне очереди (+ 250 RUB)</label>
     </div>
 </div>
 <h2 class="fontweight100 fadeInRight wow">Финальное Т.З.</h2>
@@ -139,6 +174,10 @@ lazyload();
     var usluga_selector = document.getElementById("design_select")
     var cover_input = document.getElementById("cover_input")
     var decoration_input = document.getElementById("decoration_input")
+    var brandbook_input = document.getElementById("brandbook_input")
+    var print_input = document.getElementById("print_input")
+    var site_input = document.getElementById("site_input")
+    var motion_input = document.getElementById("motion_input")
     var final_price = document.getElementById("final_price")
     var fastdelivery = document.getElementById("fastdelivery")
     var motion = document.getElementById("motion")
@@ -176,6 +215,10 @@ animateValue(obj, 0, tech_price, 1000);
         if (usluga_selector.value == "cover") {
             cover_input.classList.remove("display_none")
             decoration_input.classList.add("display_none")
+            brandbook_input.classList.add("display_none")
+            print_input.classList.add("display_none")
+            site_input.classList.add("display_none")
+            motion_input.classList.add("display_none")
             fastdelivery.checked = false;
             fastdelivery_decoration.checked = false;
             motion.checked = false;
@@ -186,12 +229,75 @@ animateValue(obj, 0, tech_price, 1000);
         } if (usluga_selector.value == "decoration") {
             decoration_input.classList.remove("display_none")
             cover_input.classList.add("display_none")
+            brandbook_input.classList.add("display_none")
+            print_input.classList.add("display_none")
+            site_input.classList.add("display_none")
+            motion_input.classList.add("display_none")
+            fastdelivery.checked = false;pricelist
+            fastdelivery_decoration.checked = false;
+            motion.checked = false;
+            motion_decoration.checked = false;
+            tech_price = 0
+            tech_price = tech_price + 750
+            applyprice()
+        } if (usluga_selector.value == "brandbook") {
+            decoration_input.classList.add("display_none")
+            cover_input.classList.add("display_none")
+            brandbook_input.classList.remove("display_none")
+            print_input.classList.add("display_none")
+            site_input.classList.add("display_none")
+            motion_input.classList.add("display_none")
+            fastdelivery.checked = false;
+            fastdelivery_decoration.checked = false;
+            motion.checked = false;
+            motion_decoration.checked = false;
+            tech_price = 0
+            tech_price = tech_price + 1000
+            applyprice()
+        }
+        if (usluga_selector.value == "print") {
+            decoration_input.classList.add("display_none")
+            cover_input.classList.add("display_none")
+            brandbook_input.classList.add("display_none")
+            print_input.classList.remove("display_none")
+            site_input.classList.add("display_none")
+            motion_input.classList.add("display_none")
             fastdelivery.checked = false;
             fastdelivery_decoration.checked = false;
             motion.checked = false;
             motion_decoration.checked = false;
             tech_price = 0
             tech_price = tech_price + 750
+            applyprice()
+        }
+        if (usluga_selector.value == "site") {
+            decoration_input.classList.add("display_none")
+            cover_input.classList.add("display_none")
+            brandbook_input.classList.add("display_none")
+            print_input.classList.add("display_none")
+            site_input.classList.remove("display_none")
+            motion_input.classList.add("display_none")
+            fastdelivery.checked = false;
+            fastdelivery_decoration.checked = false;
+            motion.checked = false;
+            motion_decoration.checked = false;
+            tech_price = 0
+            tech_price = tech_price + 3000
+            applyprice()
+        }
+        if (usluga_selector.value == "motion") {
+            decoration_input.classList.add("display_none")
+            cover_input.classList.add("display_none")
+            brandbook_input.classList.add("display_none")
+            print_input.classList.add("display_none")
+            site_input.classList.add("display_none")
+            motion_input.classList.remove("display_none")
+            fastdelivery.checked = false;
+            fastdelivery_decoration.checked = false;
+            motion.checked = false;
+            motion_decoration.checked = false;
+            tech_price = 0
+            tech_price = tech_price + 350
             applyprice()
         }
     })
@@ -232,6 +338,36 @@ animateValue(obj, 0, tech_price, 1000);
             applyprice()
         } else {
             tech_price = tech_price - 350
+            applyprice()
+  }
+    })
+    
+    fastdelivery_brandbook.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 500
+            applyprice()
+        } else {
+            tech_price = tech_price - 500
+            applyprice()
+  }
+    })
+
+    fastdelivery_print.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 250
+            applyprice()
+        } else {
+            tech_price = tech_price - 250
+            applyprice()
+  }
+    })
+
+    fastdelivery_motion.addEventListener("change", function(){
+        if (this.checked) {
+            tech_price = tech_price + 250
+            applyprice()
+        } else {
+            tech_price = tech_price - 250
             applyprice()
   }
     })

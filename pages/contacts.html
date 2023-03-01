@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualbless | Дизайн, обложки, моушн</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" media="all" href="/cssanim/css/animate.css">
+</head>
+<body>
+    <div class="preloader">
+<img src="/ezgif-5-38d890d27e.gif" alt="">
+      </div>
+    <div class="bluebar">
+        <img src="/Visual_Bless.svg" alt="">
+    </div>
+    <header>
+        
+        <nav class="menu">
+            <a href="/index.html" class="menu_button">Главная</a>
+            <a href="javascript:void(0);" id="portfolio_button" class="menu_button">Портфолио</a>
+            <a href="/pages/credits.html" class="menu_button">Кредитсы</a>
+            <a href="/pages/market.html" class="menu_button">Маркет</a>
+            <a href="/pages/pricelist.html" class="menu_button">Прайс-лист</a>
+            <a href="/pages/reviews.html" class="menu_button">Отзывы</a>
+            <a href="/pages/contacts.html" class="menu_button">Контакты</a>
+        </nav>
+        <nav class="sub_menu" id="portfolio">
+            <a href="/pages/portfolio/covers.html" class="menu_button">Обложки</a>
+            <a href="/pages/portfolio/brandbooks.html" class="menu_button">Брендбуки</a>
+            <a href="/pages/portfolio/prints.html" class="menu_button">Принты</a>
+            <a href="/pages/portfolio/sites.html" class="menu_button">Сайты</a>
+            <a href="/pages/portfolio/decorations.html" class="menu_button">Оформления</a>
+            <a href="/pages/portfolio/motion.html" class="menu_button">Motion-дизайн</a>
+        </nav>
+    </header>       
+    <div class="autoplay" id="main_slider">
+        <div>
+            <div class="main_slide_1">
+                <a class="main_slide_1_title" id="main_slide_1_href"></a>
+                <p class="main_slide_1_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_2">
+                <a class="main_slide_2_title" id="main_slide_2_href"></a>
+                <p class="main_slide_2_desc"></p>
+            </div>
+        </div>
+        <div>
+            <div class="main_slide_3">
+                <a class="main_slide_3_title" id="main_slide_3_href"></a>
+                <p class="main_slide_3_desc"></p>
+            </div>
+        </div>
+    </div> 
+    <h1 class="fontweight100 fadeInRight wow ">Контакты</h1>
+    <div class="contacts">
+        <div class="contact">
+            <div class="contact_top">
+                <a href="https://vk.com/visualbless" target="_blank" class="text_decoration_none"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_%282021-present%29.svg" alt="" class="contact_img"></a>
+                <a href="https://vk.com/visualbless" target="_blank" class="text_decoration_none"><h3 class="contact_title">Группа ВКонтакте</h3></a>
+            </div>
+            <a href="https://vk.com/visualbless" target="_blank" class="text_decoration_none"><h3 class="contact_description">Официальная группа visualbless в ВКонтакте</h3></a>
+        </div>
+    </div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="/pagesystem.js"></script>
+<script src="/script.js"></script>
+<script>
+    $('.autoplay').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script>
+lazyload();
+</script>
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <script src="/cssanim/js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+</body>
+</html>

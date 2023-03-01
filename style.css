@@ -913,6 +913,22 @@ a { outline: none;}
     text-align: center;
 }
 
+.pricelist_brandbook_input {
+    text-align: center;
+}
+
+.pricelist_print_input {
+    text-align: center;
+}
+
+.pricelist_site_input {
+    text-align: center;
+}
+
+.pricelist_motion_input {
+    text-align: center;
+}
+
 textarea {
     outline: none;
 }
@@ -1009,4 +1025,87 @@ option {
     opacity: 0;
     z-index: -1;
     appearance: none;
+}
+
+.reviews {
+    text-align: center;
+
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(255, 255, 255);
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.review_top {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.review_top h3 {
+    margin: 15px;
+}
+
+.review_top h4 {
+    margin: 5px;
+}
+
+.review_img {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+.review_text {
+    margin: 10px;
+    width: 100%;
+}
+
+.review_date {
+    color: rgb(255, 255, 255);
+}
+
+.review_link {
+    color: white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_title {
+    margin: 20px;
+}
+
+.contact_description {
+    margin: 5px;
+}
+
+.text_decoration_none {
+    text-decoration: none;
+    color: white;
 }
