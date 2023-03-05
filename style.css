@@ -795,12 +795,13 @@ li {
     align-items: center;
     text-align: center;
     animation: preloader-rotate 2s infinite linear;
-  }
+}
 
   .preloader {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
   }
 
   .preloader img {
@@ -1108,4 +1109,8 @@ option {
 .text_decoration_none {
     text-decoration: none;
     color: white;
+}
+
+.hello_bar_content {
+    margin: 2px;
 }
