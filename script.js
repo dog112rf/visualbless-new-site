@@ -140,13 +140,13 @@ if (theme == undefined) {
 	if (hours>21 && themechangedmanually == false) {
 		var totaltheme = "dark"
 		bodyid.classList.remove("light")
-	
+		console.log("AUTO-CHANGED TO DARK THEME SUCESSFULLY")
 	} if (hours>21 && themechangedmanually == true) {
 	
 	} if (hours<21 && themechangedmanually == false) {
 		var totaltheme = "light"
 		bodyid.classList.add("light")
-
+		console.log("AUTO-CHANGED TO LIGHT THEME SUCESSFULLY")
 	} if (hours<21 && themechangedmanually == true) {
 	
 	}
@@ -160,10 +160,20 @@ themechanger.addEventListener("click",function(){
 		totaltheme = "light"
 		setCookie("theme","light")
 		setCookie("themechangedmanually", true)
+		console.log("CHANGED THEME TO LIGHT SUCESSFULLY")
 	} else {
 		bodyid.classList.remove("light")
 		setCookie("theme","dark")
 		totaltheme = "dark"
 		setCookie("themechangedmanually", true)
+		console.log("CHANGED THEME TO DARK SUCESSFULLY")
 	}
+})
+
+var delcook = document.getElementById("deletecookie")
+
+delcook.addEventListener("click", function(){
+	deleteCookie("theme")
+	deleteCookie("themechangedmanually")
+	console.log("DELETED COOKIES SUCESSFULLY")
 })

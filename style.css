@@ -371,6 +371,10 @@ html, body {
     width: 100%;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .bluebar p {
@@ -1090,6 +1094,7 @@ option {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 60px;
 }
 
 .contact_top {
@@ -1222,4 +1227,44 @@ option {
 
 .light .review {
     border: solid 2px rgb(0, 0, 0);
+}
+
+.light .text_decoration_none {
+    color: black;
+}
+
+#themechanger {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.light #themechanger {
+    color: black;
+}
+
+.footer {
+    margin: 50px;
+}
+
+.deletecookie {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.copyright {
+    margin: 2px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.light .deletecookie {
+    color: black;
+}
+
+.light .copyright {
+    color: black;
 }
