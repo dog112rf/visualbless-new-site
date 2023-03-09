@@ -1112,5 +1112,114 @@ option {
 }
 
 .hello_bar_content {
-    margin: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.light {
+    background: #fafafa;
+}
+
+.light .fontweight100 {
+    color: black;
+}
+
+.light .latest_news_block h3 {
+    color: white;
+}
+
+.light .latest_news_block h4 {
+    color: white;
+}
+
+.light .latest_news_block h5 {
+    color: white;
+}
+
+.light h1 {
+    color: black;
+}
+
+.light .portfolio_artist_text h3{
+    color: black;
+}
+
+.light .portfolio_artist_text h4{
+    color: black;
+}
+
+.light .bluebar img {
+    filter: invert(0);
+}
+
+.light .menu_button {
+    color: black;
+}
+
+.light .hello_bar marquee {
+    background: #000000;
+}
+
+.light .credits_page_count_text_container > h3 {
+    color: black;
+}
+
+.light #creditscustomerscount {
+    color: black!important;
+    animation: none;
+    text-shadow: none;
+}
+
+.light .sort {
+    background: none;
+    color: black;
+}
+
+.light .search:focus {
+    border: black dashed 2px;
+}
+
+.light .sites_gallery_block_text {
+    color: black;
+}
+
+.light .sites_gallery_block_text_link {
+    color: black;
+}
+
+.light label {
+    color: black;
+}
+
+.light #price_copy_button {
+    color: black;
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+
+.light .make_order {
+    color: black;
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+.light .price_container_price {
+    color: black;
+}
+
+.light .market_buy_button {
+    color: black;
+}
+
+.light .review_link {
+    color: black;
+}
+
+.light .review_text {
+    color: black;
+}
+
+.light .review {
+    border: solid 2px rgb(0, 0, 0);
 }
