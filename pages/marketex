@@ -10,6 +10,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
   />
+  <link rel="shortcut icon" href="/Visual_Bless.svg">
 </head>
 <body>
     <div class="fullscreen">
