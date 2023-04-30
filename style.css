@@ -547,19 +547,19 @@ html, body {
 }
 
 #news_block_3 {
-    background: url(https://sun7-16.userapi.com/impg/5S5PNeDgHCVTVxCbzM219UIi8cz8k-2w4fsmwQ/pRakFgWGeXc.jpg?size=2160x2160&quality=95&sign=d2f80b678e6a1b264bfa7034dcfc8c56&type=album);
+    background: url(https://sun9-77.userapi.com/impg/E3mTUdhFczBd5AVO4GTgdWvRuL07nJSSryKDsw/bfKijNCiH7E.jpg?size=2560x2560&quality=95&sign=1b2c2c86c175ea61f025957421e0efb9&type=album);
     background-size: cover;
     background-position-x: center;
 }
 
 #news_block_2 {
-    background: url(https://sun7-7.userapi.com/impg/F1h50_kPUY4AghFEL_U5B81Vfk0LC1kkUWutXQ/d9MI2M1xk4E.jpg?size=1600x1600&quality=95&sign=3d6ab4abcb6b5b6bb87b968c0d427ad2&type=album);
+    background: url(https://sun9-26.userapi.com/impg/qvviGbAMCTCgdFRvYvDMjzWi5xKGIicBQq0xVA/FU4KGlz6i54.jpg?size=2560x2560&quality=95&sign=4c4c1ce1a2135ebb0ab44a215f41a269&type=album);
     background-size: cover;
     background-position-x: center;
 }
 
 #news_block_1 {
-    background: url(https://sun7-14.userapi.com/impg/srTvlurIYBBwAuGRaAtR5zRHXWoOFxOx6u2MGg/tzsnuuCRDSM.jpg?size=1920x1920&quality=95&sign=4165340d444de6f2ebf2335e3624d502&type=album);
+    background: url(https://psv4.userapi.com/c240331/u243323151/docs/d28/72eb93b337b0/vb_shirt_2.jpg?extra=XsBMjS0KJOIu1xVuOzfBGwSnasm9uqgtUT0cR6CTYY76VJt8RzoUkV48qN83E3PdQcfhRLRaufa8zPN5g55QaSfxhLMx9tqDkcDJE6Aw9qaiKE-kabKn9ftJLvtiooIenjIy7b53SVRzOB5t0R5aA7xrZ9A);
     background-size: cover;
     background-position-x: center;
 }
@@ -1567,6 +1567,10 @@ a:hover {
     font-size: 50px;
 }
 
+.news_link {
+    color: white
+}
+
 @media(max-width:1095px) {
     .menu {
         justify-content: center;
@@ -1613,6 +1617,10 @@ a:hover {
         display: flex;
         padding: 2px;
         flex-direction: column;
+    }
+
+    .tovar_slider {
+        width: 100%;
     }
 
     .razmer_setka {
@@ -1668,4 +1676,37 @@ a:hover {
         width: 75%;
     }
 
+    textarea {
+        width: 300px!important;
+    }
+
+    .market_position img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .review {
+        display: flex;
+        width: 90%;
+    }
+
+    .review_text {
+        font-size: 20px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .latest_news_block:hover {
+        box-shadow: none;
+        width: 350px;
+    }
 }
