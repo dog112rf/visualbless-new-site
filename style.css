@@ -1579,6 +1579,10 @@ a:hover {
     width: 70px;
 }
 
+.tovar_gif {
+    width: 50%;
+}
+
 @media(max-width:1095px) {
     .menu {
         justify-content: center;

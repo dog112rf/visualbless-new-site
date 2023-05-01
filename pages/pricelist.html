@@ -372,6 +372,21 @@ animateValue(obj, 0, tech_price, 1000);
             tech_price = tech_price - 250
             applyprice()
   }
+  if (fastdelivery_decoration.checked == true & motion_decoration.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " + price_final_text.innerHTML +". " + "В заказ включена быстрая доставка и motion-анимация."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        }
+        
+        if (fastdelivery_decoration.checked == true & motion_decoration.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+
+        if (fastdelivery_decoration.checked == false & motion_decoration.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена motion-анимация."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_decoration.checked == false & motion_decoration.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
     
     motion_decoration.addEventListener("change", function(){
@@ -382,6 +397,21 @@ animateValue(obj, 0, tech_price, 1000);
             tech_price = tech_price - 350
             applyprice()
   }
+  if (fastdelivery_decoration.checked == true & motion_decoration.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " + price_final_text.innerHTML +". " + "В заказ включена быстрая доставка и motion-анимация."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        }
+        
+        if (fastdelivery_decoration.checked == true & motion_decoration.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+
+        if (fastdelivery_decoration.checked == false & motion_decoration.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена motion-анимация."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_decoration.checked == false & motion_decoration.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
     
     fastdelivery_brandbook.addEventListener("change", function(){
@@ -392,6 +422,14 @@ animateValue(obj, 0, tech_price, 1000);
             tech_price = tech_price - 250
             applyprice()
   }
+        
+        if (fastdelivery_brandbook.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на логотип. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_brandbook.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на логотип. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
     fastdelivery_print.addEventListener("change", function(){
@@ -402,6 +440,14 @@ animateValue(obj, 0, tech_price, 1000);
             tech_price = tech_price - 250
             applyprice()
   }
+        
+        if (fastdelivery_print.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на принт. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_print.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на принт. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
     fastdelivery_motion.addEventListener("change", function(){
@@ -412,6 +458,14 @@ animateValue(obj, 0, tech_price, 1000);
             tech_price = tech_price - 250
             applyprice()
   }
+
+  if (fastdelivery_motion.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на Motion. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_motion.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на Motion. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
     var makeorder = document.getElementById("makeorder")
@@ -438,27 +492,60 @@ animateValue(obj, 0, tech_price, 1000);
 
     decoration_input_content.addEventListener("change", function(){
         price_final_text.innerHTML =  decoration_input_content.value
-        makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML + "&subject=Заказ"
+   
+        if (fastdelivery_decoration.checked == true & motion_decoration.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " + price_final_text.innerHTML +". " + "В заказ включена быстрая доставка и motion-анимация."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        }
+        
+        if (fastdelivery_decoration.checked == true & motion_decoration.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+
+        if (fastdelivery_decoration.checked == false & motion_decoration.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена motion-анимация."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_decoration.checked == false & motion_decoration.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на оформление. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
     print_input_content.addEventListener("change", function(){
         price_final_text.innerHTML =  print_input_content.value
-        makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML + "&subject=Заказ"
+        if (fastdelivery_print.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на принт. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_print.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на принт. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
     motion_input_content.addEventListener("change", function(){
         price_final_text.innerHTML =  motion_input_content.value
-        makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML + "&subject=Заказ"
+        if (fastdelivery_motion.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на Motion. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_motion.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на Motion. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
     site_input_content.addEventListener("change", function(){
         price_final_text.innerHTML =  site_input_content.value
-        makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML + "&subject=Заказ"
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на сайт. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
     })
 
     brandbook_input_content.addEventListener("change", function(){
         price_final_text.innerHTML =  brandbook_input_content.value
-        makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML + "&subject=Заказ"
+        if (fastdelivery_brandbook.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на логотип. Техническое задание: " +price_final_text.innerHTML +". " + "В заказ включена быстрая доставка."+ " Стоимость составляет:" + String(tech_price) + "&subject=Заказ"
+        } 
+        
+        if (fastdelivery_brandbook.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ "Заказ на логотип. Техническое задание: " + price_final_text.innerHTML +". " + "Стоимость составляет: " + String(tech_price) + "&subject=Заказ"
+        } 
     })
 
 
