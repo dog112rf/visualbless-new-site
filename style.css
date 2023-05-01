@@ -1571,6 +1571,14 @@ a:hover {
     color: white
 }
 
+.light #price_final_text {
+    color: black;
+}
+
+.contact_img {
+    width: 70px;
+}
+
 @media(max-width:1095px) {
     .menu {
         justify-content: center;
