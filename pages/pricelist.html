@@ -136,7 +136,7 @@
 </div>
 <h2 class="fontweight100 fadeInRight wow">Финальное Т.З.</h2>
 <div class="price_final_text_container fadeInRight wow"><h3 class="price_final_text fadeInRight wow" id="price_final_text"></h3></div>
-<a href="javascript:void(0);" id="price_copy_button" class="js-copy-btn fadeInRight wow">Скопировать в буфер обмен111а</a>
+<a href="javascript:void(0);" id="price_copy_button" class="js-copy-btn fadeInRight wow">Скопировать в буфер обмен222а</a>
 <h2 class="fontweight100 fadeInRight wow">Финальная цена</h2>
 <div class="price_container fadeInRight wow"><h2 class="price_container_price fadeInRight wow" id="final_price">0</h2><p class="fontweight100 fadeInRight wow">RUB</p></div>
 <a href="mailto:mail@htmlacademy.ru&body=привет?subject=вопрос"  id="makeorder" class="make_order fadeInRight wow">Сделать заказ</a>
@@ -318,7 +318,24 @@ animateValue(obj, 0, tech_price, 1000);
         } else {
             tech_price = tech_price - 250
             applyprice()
-  }
+  
+          }
+
+          if (fastdelivery.checked == true & motion.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel1 motion1"+ "&subject=Заказ"
+        }
+        
+        if (fastdelivery.checked == true & motion.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel1 motion0"+ "&subject=Заказ"
+        } 
+
+        if (fastdelivery.checked == false & motion.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel0 motion1"+ "&subject=Заказ"
+        } 
+        
+        if (fastdelivery.checked == false & motion.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel0 motion0"+ "&subject=Заказ"
+        } 
     })
     
     motion.addEventListener("change", function(){
@@ -329,6 +346,22 @@ animateValue(obj, 0, tech_price, 1000);
             tech_price = tech_price - 350
             applyprice()
   }
+
+  if (fastdelivery.checked == true & motion.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel1 motion1"+ "&subject=Заказ"
+        }
+        
+        if (fastdelivery.checked == true & motion.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel1 motion0"+ "&subject=Заказ"
+        } 
+
+        if (fastdelivery.checked == false & motion.checked == true) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel0 motion1"+ "&subject=Заказ"
+        } 
+        
+        if (fastdelivery.checked == false & motion.checked == false) {
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel0 motion0"+ "&subject=Заказ"
+        } 
     })
 
     fastdelivery_decoration.addEventListener("change", function(){
