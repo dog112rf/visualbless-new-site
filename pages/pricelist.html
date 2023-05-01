@@ -385,6 +385,26 @@ animateValue(obj, 0, tech_price, 1000);
         price_final_text.innerHTML = cover_input_content.value
     })
 
+    decoration_input_content.addEventListener("change", function(){
+        price_final_text.innerHTML =  decoration_input_content.value
+    })
+
+    print_input_content.addEventListener("change", function(){
+        price_final_text.innerHTML =  print_input_content.value
+    })
+
+    motion_input_content.addEventListener("change", function(){
+        price_final_text.innerHTML =  motion_input_content.value
+    })
+
+    site_input_content.addEventListener("change", function(){
+        price_final_text.innerHTML =  site_input_content.value
+    })
+
+    brandbook_input_content.addEventListener("change", function(){
+        price_final_text.innerHTML =  brandbook_input_content.value
+    })
+
     function fallbackCopyTextToClipboard(text) {
   var textArea = document.createElement("textarea");
   textArea.value = text;
