@@ -386,19 +386,19 @@ animateValue(obj, 0, tech_price, 1000);
     cover_input_content.addEventListener("change", function(){
         price_final_text.innerHTML = cover_input_content.value
         if (fastdelivery.checked == true && motion.checked == true) {
-          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel = 1 motion = 1"+ "&subject=Заказ"
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel1 motion1"+ "&subject=Заказ"
         }
         
         if (fastdelivery.checked == true && motion.checked == false) {
-          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel = 1 motion = 0"+ "&subject=Заказ"
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel1 motion0"+ "&subject=Заказ"
         } 
 
         if (fastdelivery.checked == false && motion.checked == true) {
-          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel = 0 motion = 1"+ "&subject=Заказ"
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel0 motion1"+ "&subject=Заказ"
         } 
         
         if (fastdelivery.checked == false && motion.checked == false) {
-          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel = 0 motion = 0"+ "&subject=Заказ"
+          makeorder.href = "mailto:blessvisual@vk.com?body="+ price_final_text.innerHTML +" " + "fastdel0 motion0"+ "&subject=Заказ"
         } 
     })
 
